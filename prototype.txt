@@ -1,0 +1,56 @@
+* Fitur
+	- Auth
+	- Dashboard
+	- CRUD Barang
+	- CRUD Jenis Barang
+	- Supplier :
+		- CRUD
+		- Cetak PDF
+		- Print
+	- Barang Masuk & Keluar
+	- Peminjaman :
+		- Peminjaman Baru
+		- Print
+		- Cetak PDF
+	- Laporan :
+		- Cetak PDF
+		- Print
+	- CRUD Pengguna
+	- Ganti Password
+
+* Database
+	- users :
+		- name
+		- username
+		- password
+		- level
+		- photo
+	- stuffs :
+		- name, ['unique']
+		- spec
+		- loaction
+		- condition, ['baru', 'rusak']
+		- total
+		- origin
+		- description
+		- category_id
+	- categories :
+		- name, ['unique']
+	- suppliers :
+		- name, ['unique'],
+		- address
+		- phone
+	- activities :
+		- type
+		- total
+		- supplier_id
+		- stuff_id
+	- loans :
+		- name
+		- total
+		- condition
+		- loan_date
+		- return_date
+		- status [0, 1]
+		- stuff_id
+
